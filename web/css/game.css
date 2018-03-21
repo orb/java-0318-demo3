@@ -1,0 +1,20 @@
+/* Tiles and images from from https://opengameart.org/ */
+
+div.map-row {
+    font-size: 0;
+}
+
+.map-tile{
+    width:  32px; 
+    height: 32px; 
+    background: url('/maze/images/tiles.png') 0 0 no-repeat;
+    display: inline-block
+}
+
+.map-empty {
+    background-position: -32px -64px;
+}
+
+.map-wall{
+    background-position: -224px -32px;
+}
