@@ -7,7 +7,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet("")
 public class GameServlet extends HttpServlet {
@@ -43,7 +42,6 @@ public class GameServlet extends HttpServlet {
         MazeGame currentGame = (MazeGame) request.getSession().getAttribute("maze");
 
         if (currentGame != null) {
-            System.out.println("DIRECTION:" + request.getParameter("direction"));
             currentGame.move(directionFromString(request.getParameter("direction")));
         }
 

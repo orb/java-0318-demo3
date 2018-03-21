@@ -1,7 +1,6 @@
 package com.nostacktrace.maze;
 
 public class Counter {
-
     int count;
     
     public Counter() {
@@ -15,6 +14,5 @@ public class Counter {
     public int incrementCount() {
         this.count = this.count + 1;
         return this.count;
-
     }
 }
